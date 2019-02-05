@@ -1,0 +1,30 @@
+public static int value(StringBuilder str1 , StringBuilder str2 , StringBuilder str3    ) 
+{
+for(int i=0;i<st1.length();i++)
+ {
+     char a=st1.charAt(i);
+      for(int j=0;j<st2.length();j++)
+      {
+          char b=st2.charAt(j);
+          if(a==b)
+          {
+              for(int k=0;k<st3.length();k++)
+              { char c=st3.charAt(k);
+              if(b==c)
+              {count =count+1;
+                      st2.deleteCharAt(j);
+              st3.deleteCharAt(k);
+              }
+              else 
+                  continue;
+              }
+          }
+          else
+          { continue;
+          }
+      }
+
+ }
+   return(count);
+ }
+
